@@ -49,7 +49,7 @@ Setup Steps
 git clone <repository-url>
 
 # Copy files to your web server directory
-# For XAMPP: Copy to xampp/htdocs/shaghaf-coffee-shop
+# For XAMPP: Copy to xampp/htdocs/master-coffee-shop
 File Permissions
 
 Ensure the uploads/ directory is writable for product image uploads
