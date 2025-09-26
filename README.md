@@ -1,71 +1,83 @@
-ShAGHAF Coffee Shop
+# ShAGHAF Coffee Shop
 
 A comprehensive e-commerce web application for a coffee machine store built with PHP, MySQL, HTML, CSS, and JavaScript.
 
-Overview
-
+## Overview
 ShAGHAF Coffee Shop is a full-featured e-commerce website for selling coffee machines. The application allows customers to browse products, add items to their cart, and manage favorites. Admin users can manage the product catalog by adding, editing, and deleting products.
 
-Features
+## Features
 
-Customer Features
+# Customer Features
+- Browse coffee machines with detailed information
+- Add products to shopping cart
+- Save favorite products
+- View product details
+- Responsive design for all devices
 
-Browse coffee machines with detailed information
-Add products to shopping cart
-Save favorite products
-View product details
-Responsive design for all devices
-Admin Features
+# Admin Features
+- Admin login system
+- Add new products with images
+- Edit existing product information
+- Delete products from catalog
+- Manage entire product inventory
+- View products in table format
 
-Admin login system
-Add new products with images
-Edit existing product information
-Delete products from catalog
-Manage entire product inventory
-View products in table format
-Technical Features
+# Technical Features
+- Secure database connections with error handling
+- Session-based user authentication
+- Responsive web design with modern Segoe UI fonts
+- Professional styling with gradients, rounded corners, and box shadows
+- Smooth transitions and enhanced visual elements
+- Consistent styling across all pages
+- Left-aligned navigation bar (not centered)
+- Proper error handling and validation
 
-Secure database connections with error handling
-Session-based user authentication
-Responsive web design
-Consistent styling across all pages
-Proper error handling and validation
-Technologies Used
+## Technologies Used
+#Frontend
+- HTML5
+- CSS3 with modern Segoe UI fonts
+- JavaScript
 
-Frontend: HTML5, CSS3, JavaScript
-Backend: PHP 7+
-Database: MySQL
-Server: Apache (XAMPP recommended)
-Additional: AJAX for dynamic updates
-Installation
+# Backend
+- PHP 7+
 
+# Database
+- MySQL
+
+# Server
+- Apache (XAMPP recommended)
+
+# Additional
+- AJAX for dynamic updates
+
+## Installation
 Prerequisites
+- Install XAMPP or any LAMP/WAMP stack
+- Ensure Apache and MySQL services are running
 
-Install XAMPP or any LAMP/WAMP stack
-Ensure Apache and MySQL services are running
-Setup Steps
-
-# Clone or download the repository
+## Setup Steps
+bash
+//Clone or download the repository
 git clone <repository-url>
 
-# Copy files to your web server directory
-# For XAMPP: Copy to xampp/htdocs/master-coffee-shop
+//Copy files to your web server directory
+//For XAMPP: Copy to xampp/htdocs/master-coffee-shop
+
 File Permissions
+- Ensure the uploads/ directory is writable for product image uploads
+- Web server should have read/write access to the project directory
 
-Ensure the uploads/ directory is writable for product image uploads
-Web server should have read/write access to the project directory
-Database Setup
-
-Create Database
-
-Open phpMyAdmin or MySQL command line
-Execute the SQL commands in setup_database.sql:
+## Database Setup
+# Create Database
+- Open phpMyAdmin or MySQL command line
+- Execute the SQL commands in setup_database.sql:
+sql
 CREATE DATABASE IF NOT EXISTS coffee_machine;
 USE coffee_machine;
-Create Tables
 
-The required table will be created automatically by running the setup script
-Product table structure:
+## Create Tables
+- The required table will be created automatically by running the setup script
+- Product table structure:
 id (INT, AUTO_INCREMENT, PRIMARY KEY)
 name (VARCHAR)
 Price (DECIMAL)
@@ -74,21 +86,16 @@ Color (VARCHAR)
 ProductOverview (TEXT)
 Vimage (VARCHAR)
 created_at (TIMESTAMP)
-Admin Access
 
-Login Credentials
+## Admin Access
+- Login Credentials
+Username: admin
+Password: password
 
-Username admin
-Password password
-Admin Functions
+## Admin Functions
+1. Navigate to Admin Login from the main menu
+2. After login, admin features become available:
+- Add Products: Create new product entries
+- Manage Products: Edit or delete existing products
+- View detailed product tables
 
-Navigate to Admin Login from the main menu
-After login, admin features become available:
-Add Products: Create new product entries
-Manage Products: Edit or delete existing products
-View detailed product tables
-Security Notes
-
-Change the default admin password in production
-Keep admin credentials secure
-Always logout after admin sessions
