@@ -75,7 +75,7 @@ sql
 CREATE DATABASE IF NOT EXISTS coffee_machine;
 USE coffee_machine;
 
-# Create Tables
+## Create Tables
 - The required table will be created automatically by running the setup script
 - Product table structure:
 id (INT, AUTO_INCREMENT, PRIMARY KEY)
@@ -89,8 +89,8 @@ created_at (TIMESTAMP)
 
 # Admin Access
 - Login Credentials
-Username: admin
-Password: password
+- Username: admin
+- Password: password
 
 # Admin Functions
 1. Navigate to Admin Login from the main menu
